@@ -12,8 +12,8 @@
 	
 		<form name="frm" action="test.html">
 		<select name="m">
-			<option>Materia 1</option>
-			<option>Materia 2</option>
+			<option>Carrera 1 - Materia 1 - Turno 1</option>
+			<option>Carrera 1 - Materia 2 - Turno 1</option>
 		</select>
 		<input type="submit" value="Continuar">
 		</form>
@@ -21,26 +21,6 @@
 	</div>
 
 </div>
-
-<script>
-var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
-
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
-
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : sParameterName[1];
-        }
-    }
-};
-
-var m = getUrlParameter('m');
-alert(m);
-</script>
 	
 </body>
 </html>
