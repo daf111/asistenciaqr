@@ -101,6 +101,11 @@
 	</script>
 	
 	<script>
+        $.ajax({
+		url: "http://itssalud.edu.ar/admin/xxxx.php"
+	  }).then(function(data) {
+		alert(data);
+	  });
 	parent.setAsistencia(1111);
 	</script>
 
